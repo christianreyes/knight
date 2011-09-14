@@ -1,0 +1,53 @@
+#!/usr/bin/env ruby
+
+def pretty(message)
+	puts ""
+	puts "======================================================"
+	puts message
+	puts "======================================================"
+	puts ""
+end
+	
+puts ""
+puts "======================================================"
+puts "                                                      "
+puts "      batlh                 |                         "
+puts "                            |                         "
+puts "      qajunpaQ              |                         "
+puts "                           ' `                        "
+puts "      ghIgh                | |                        "
+puts "                           | |                        "
+puts "                          '   `                       "
+puts "                       .-'|   |`-.                    "
+puts "                      /  /     \  \                   "
+puts "                     |__,\     /   |                  "
+puts "                    -'   \\   //\_ |                  "
+puts "                 ,-'   ___\\.//   `-__                "
+puts "                /__,--'       `--.____--              "
+puts "                       `-._____.-'                    "
+puts "                                                      "
+puts "======================================================"
+puts ""
+
+# test if ruby file compiles
+
+out = `ruby -c credit_cards.rb`
+
+if !out.match(/OK/)
+	pretty("credit_cards.rb has syntax errors")
+end
+
+out = `ruby -c credit_cards_test.rb`
+
+if !out.match(/OK/)
+	pretty("credit_cards_test.rb has syntax errors")
+end
+
+pretty("Running Unit Tests")
+
+out = `ruby credit_cards_test.rb`
+
+info = /(\d+) tests, (\d+) assertions, (\d+) failures, (\d+) errors, (\d+) skips/.match(out)
+puts info[0]
+
+pretty("Finished executing Post-Commit Hook")
