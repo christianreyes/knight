@@ -1,7 +1,26 @@
 <h1>Grade Report</h1>
 
+<h2>Raw Output</h2>
 <div>
 	<pre>
 <%= @output %>
 	</pre>
 </div>
+
+<h2>Summary</h2>
+<table>
+	<tr>
+		<th>Tests</th>
+		<th>Assertions</th>
+		<th>Failures</th>
+		<th>Errors</th>
+		<th>Skips</th>
+	</tr>
+	<tr>
+		<td><%= @info[1] %></td>
+		<td><%= @info[2] %></td>
+		<td><%= @info[3] %></td>
+		<td><%= @info[4] %></td>
+		<td><%= @info[5] %></td>
+	</tr>
+</table>
