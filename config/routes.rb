@@ -1,4 +1,9 @@
 Knight::Application.routes.draw do
+  post "home/grade"
+
+  get "home/index"
+
+  root :to => 'home#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

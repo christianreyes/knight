@@ -1,0 +1,13 @@
+<h1>Knight Grader ALPHA</h1>
+
+<h2>Repositories</h2>
+
+<table>
+<% for repo in @repos %>
+	<tr>
+		<td><%= repo %></td>
+		<td><%= button_to "Grade", {:controller => :home, :action => "list"} %></td>
+	</tr>
+<% end %>
+</table>
+
