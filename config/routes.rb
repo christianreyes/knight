@@ -1,5 +1,5 @@
 Knight::Application.routes.draw do
-  post "home/grade"
+  post "home/grade/:reponame/" => 'home#grade'
 
   get "home/index"
 

@@ -1,5 +1,8 @@
 class HomeController < ApplicationController
-  def list
+  def grade
+	Dir.chdir("repositories/#{params[:reponame]}") do
+		@output = `ruby -Itest credit_cards_test.rb`
+	end
   end
   
   def index

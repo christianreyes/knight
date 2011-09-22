@@ -6,7 +6,7 @@
 <% for repo in @repos %>
 	<tr>
 		<td><%= repo %></td>
-		<td><%= button_to "Grade", {:controller => :home, :action => "list"} %></td>
+		<td><%= button_to "Grade", {:controller => :home, :action => "grade", :reponame => repo }%></td>
 	</tr>
 <% end %>
 </table>
