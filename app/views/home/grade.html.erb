@@ -1,11 +1,10 @@
 <h1>Grade Report</h1>
 
-<h2>Raw Output</h2>
-<div>
-	<pre>
-<%= @output %>
-	</pre>
-</div>
+<h2>Unit Tests</h2>
+
+<pre>
+<%= @output_unit %>
+</pre>
 
 <% if @info %>
 <h2>Summary</h2>
@@ -26,3 +25,12 @@
 	</tr>
 </table>
 <% end %>
+
+<% if @output_cucumber %>
+	<p>All Unit Tests passed. Moving on with Cucumber Tests</p>
+	<h2>Cucumber Tests</h2>
+<pre>
+<%= @output_cucumber %>
+</pre>
+<% end %>
+
