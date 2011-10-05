@@ -5,8 +5,7 @@
     <th>Repository</th>
     <th>Total pass</th>
     <th>Total possible</th>
-    <th>Output</th>
-    <th></th>
+    <th colspan="3">Actions</th>
     <th></th>
     <th></th>
   </tr>
@@ -16,7 +15,6 @@
     <td><%= grade.repository.location if grade.repository_id %></td>
     <td><%= grade.total_pass %></td>
     <td><%= grade.total_possible %></td>
-    <td><%= grade.output %></td>
     <td><%= link_to 'Show', grade %></td>
     <td><%= link_to 'Edit', edit_grade_path(grade) %></td>
     <td><%= link_to 'Destroy', grade, confirm: 'Are you sure?', method: :delete %></td>

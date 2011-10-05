@@ -5,19 +5,19 @@ class Grade < ActiveRecord::Base
 		@output_unit = ""
 		@output_cucumber = ""
 		@unit_info = ""
-		
-		puts "GOT HERE"
-		
-		Dir.chdir(REPO_PATH + repository.location) do
-			if repository.project_type.name == "Rails"
-
 				
+		Dir.chdir(REPO_PATH + repository.location) do
+			case repository.project_type.name
+			when "Rails"
 				@output_unit = `rake test:units`
 				@unit_info = UNIT_TEST_REGEXP.match(@output_unit)
 				
-				#if @info[3] == "0" && @info[4] == "0"
-				#	@output_cucumber = `cucumber`
-				#end
+				if @unit_info[3] == "0" && @unit_info[4] == "0"
+					@output_cucumber = `cucumber`
+				end
+			when "Unit"
+				@output_unit = `ruby -Itest credit_cards_test.rb`	
+				@unit_info = UNIT_TEST_REGEXP.match(@output_unit)
 			end
 		end
 		

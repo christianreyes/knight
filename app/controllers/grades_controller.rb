@@ -49,6 +49,7 @@ class GradesController < ApplicationController
 	
 	@grade.total_pass = @grade_info[2][1].to_i - @grade_info[2][3].to_i
 	@grade.total_possible = @grade_info[2][1].to_i
+	@grade.output = (@grade_info[0] + "\n\n" + @grade_info[1]).strip
 
     respond_to do |format|
       if @grade.save
