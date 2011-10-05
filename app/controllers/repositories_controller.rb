@@ -25,6 +25,7 @@ class RepositoriesController < ApplicationController
   # GET /repositories/new.json
   def new
     @repository = Repository.new
+	@project_types = ProjectType.all
 
     respond_to do |format|
       format.html # new.html.erb
@@ -35,6 +36,7 @@ class RepositoriesController < ApplicationController
   # GET /repositories/1/edit
   def edit
     @repository = Repository.find(params[:id])
+	@project_types = ProjectType.all
   end
 
   # POST /repositories
@@ -57,6 +59,7 @@ class RepositoriesController < ApplicationController
   # PUT /repositories/1.json
   def update
     @repository = Repository.find(params[:id])
+	@project_types = ProjectType.all
 
     respond_to do |format|
       if @repository.update_attributes(params[:repository])

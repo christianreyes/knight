@@ -7,7 +7,7 @@ Knight::Application.routes.draw do
 
   post "home/grade/:reponame/" => 'home#grade'
 
-  get "home/index"
+   match 'index' => 'home#index', :as => :index
 
   root :to => 'home#index'
   # The priority is based upon order of creation:

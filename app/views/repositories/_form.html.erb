@@ -12,12 +12,12 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :location %><br />
+    <%= f.label :location , "Location: /repositories/"%><br />
     <%= f.text_field :location %>
   </div>
   <div class="field">
-    <%= f.label :project_type %><br />
-    <%= f.number_field :project_type %>
+    <%= f.label :project_type_id %><br />
+	<%= f.collection_select(:project_type_id ,@project_types,:id, :name,{:include_blank =>"Select Project Type"}) %>
   </div>
   <div class="actions">
     <%= f.submit %>

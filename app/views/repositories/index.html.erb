@@ -1,6 +1,6 @@
 <h1>Listing repositories</h1>
 
-<table>
+<table class="minimal">
   <tr>
     <th>Location</th>
     <th>Project type</th>
@@ -12,7 +12,7 @@
 <% @repositories.each do |repository| %>
   <tr>
     <td><%= repository.location %></td>
-    <td><%= repository.project_type %></td>
+    <td><%= repository.project_type.name if repository.project_type %></td>
     <td><%= link_to 'Show', repository %></td>
     <td><%= link_to 'Edit', edit_repository_path(repository) %></td>
     <td><%= link_to 'Destroy', repository, confirm: 'Are you sure?', method: :delete %></td>
