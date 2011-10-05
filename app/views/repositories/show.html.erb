@@ -13,6 +13,22 @@
 </p>
 
 <p>
+  <b>Grades:</b>
+  <table class="minimal">
+	<tr>
+		<th>Total Pass</th>
+		<th>Total Possible</th>
+	</tr>
+	<% @repositories.grades.each do |grade| %>
+	  <tr>
+		<td><%= grade.total_pass %></td>
+		<td><%= grade.total_possible %></td>
+	  </tr>
+	<% end %>
+  </table>
+</p>
+
+<p>
   <b>Contents:</b>
   <pre>
   <%= @repository.contents %>

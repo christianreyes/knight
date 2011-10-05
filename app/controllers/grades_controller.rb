@@ -44,6 +44,11 @@ class GradesController < ApplicationController
   def create
     @grade = Grade.new(params[:grade])
 	@repositories = Repository.all
+	
+	@grade_info = @grade.grade_repository
+	
+	@grade.total_pass = @grade_info[2][1].to_i - @grade_info[2][3].to_i
+	@grade.total_possible = @grade_info[2][1].to_i
 
     respond_to do |format|
       if @grade.save
