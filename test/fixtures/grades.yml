@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  repo_id: 1
+  total_pass: 1
+  total_possible: 1
+  output: MyText
+
+two:
+  repo_id: 1
+  total_pass: 1
+  total_possible: 1
+  output: MyText

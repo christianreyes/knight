@@ -1,0 +1,29 @@
+<h1>Listing grades</h1>
+
+<table>
+  <tr>
+    <th>Repo</th>
+    <th>Total pass</th>
+    <th>Total possible</th>
+    <th>Output</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @grades.each do |grade| %>
+  <tr>
+    <td><%= grade.repo_id %></td>
+    <td><%= grade.total_pass %></td>
+    <td><%= grade.total_possible %></td>
+    <td><%= grade.output %></td>
+    <td><%= link_to 'Show', grade %></td>
+    <td><%= link_to 'Edit', edit_grade_path(grade) %></td>
+    <td><%= link_to 'Destroy', grade, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Grade', new_grade_path %>

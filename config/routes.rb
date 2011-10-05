@@ -1,4 +1,10 @@
 Knight::Application.routes.draw do
+  resources :grades
+
+  resources :repositories
+
+  resources :project_types
+
   post "home/grade/:reponame/" => 'home#grade'
 
   get "home/index"

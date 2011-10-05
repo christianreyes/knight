@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Repo:</b>
+  <%= @grade.repo_id %>
+</p>
+
+<p>
+  <b>Total pass:</b>
+  <%= @grade.total_pass %>
+</p>
+
+<p>
+  <b>Total possible:</b>
+  <%= @grade.total_possible %>
+</p>
+
+<p>
+  <b>Output:</b>
+  <%= @grade.output %>
+</p>
+
+
+<%= link_to 'Edit', edit_grade_path(@grade) %> |
+<%= link_to 'Back', grades_path %>
