@@ -1,7 +1,7 @@
 class CreateGrades < ActiveRecord::Migration
   def change
     create_table :grades do |t|
-      t.integer :repo_id
+      t.integer :repository_id
       t.integer :total_pass
       t.integer :total_possible
       t.text :output

@@ -2,7 +2,7 @@
 
 <table class="minimal">
   <tr>
-    <th>Repo</th>
+    <th>Repository</th>
     <th>Total pass</th>
     <th>Total possible</th>
     <th>Output</th>
@@ -13,7 +13,7 @@
 
 <% @grades.each do |grade| %>
   <tr>
-    <td><%= grade.repo_id %></td>
+    <td><%= grade.repository.location if grade.repository_id %></td>
     <td><%= grade.total_pass %></td>
     <td><%= grade.total_possible %></td>
     <td><%= grade.output %></td>

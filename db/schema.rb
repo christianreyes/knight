@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(:version => 20111005024705) do
 
   create_table "grades", :force => true do |t|
-    t.integer  "repo_id"
+    t.integer  "repository_id"
     t.integer  "total_pass"
     t.integer  "total_possible"
     t.text     "output"

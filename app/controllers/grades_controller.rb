@@ -25,6 +25,7 @@ class GradesController < ApplicationController
   # GET /grades/new.json
   def new
     @grade = Grade.new
+	@repositories = Repository.all
 
     respond_to do |format|
       format.html # new.html.erb
@@ -35,12 +36,14 @@ class GradesController < ApplicationController
   # GET /grades/1/edit
   def edit
     @grade = Grade.find(params[:id])
+	@repositories = Repository.all
   end
 
   # POST /grades
   # POST /grades.json
   def create
     @grade = Grade.new(params[:grade])
+	@repositories = Repository.all
 
     respond_to do |format|
       if @grade.save
@@ -57,7 +60,8 @@ class GradesController < ApplicationController
   # PUT /grades/1.json
   def update
     @grade = Grade.find(params[:id])
-
+	@repositories = Repository.all
+	
     respond_to do |format|
       if @grade.update_attributes(params[:grade])
         format.html { redirect_to @grade, notice: 'Grade was successfully updated.' }

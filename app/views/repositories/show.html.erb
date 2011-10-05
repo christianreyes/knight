@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<h2>Repo "<%= @repository.location %>" Details</h2>
+
 <p>
   <b>Location /repositories/</b>
   <%= @repository.location %>
@@ -8,6 +10,13 @@
 <p>
   <b>Project type:</b>
   <%= @repository.project_type.name if @repository.project_type_id %>
+</p>
+
+<p>
+  <b>Contents:</b>
+  <pre>
+  <%= @repository.contents %>
+  </pre>
 </p>
 
 

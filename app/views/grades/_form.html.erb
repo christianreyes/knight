@@ -12,8 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :repo_id %><br />
-    <%= f.number_field :repo_id %>
+    <%= f.label :repository_id %><br />
+	<%= f.collection_select(:repository_id ,@repositories,:id, :location,{:include_blank =>"Select Repository"}) %>
   </div>
   <div class="field">
     <%= f.label :total_pass %><br />
