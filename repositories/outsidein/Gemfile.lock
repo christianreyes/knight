@@ -44,9 +44,6 @@ GEM
       xpath (~> 0.1.4)
     childprocess (0.2.2)
       ffi (~> 1.0.6)
-    coffee-rails (3.1.1)
-      coffee-script (>= 2.2.0)
-      railties (~> 3.1.0)
     coffee-script (2.2.0)
       coffee-script-source
       execjs
@@ -64,7 +61,7 @@ GEM
     database_cleaner (0.6.7)
     diff-lcs (1.1.3)
     erubis (2.7.0)
-    execjs (1.2.6)
+    execjs (1.2.8)
       multi_json (~> 1.0)
     ffi (1.0.9)
     ffi (1.0.9-x86-mingw32)
@@ -153,7 +150,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  coffee-rails (~> 3.1.0)
+  coffee-script
   cucumber-rails
   database_cleaner
   jquery-rails

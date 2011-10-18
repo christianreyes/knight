@@ -1,0 +1,102 @@
+
+
+Started GET "/books/new" for 127.0.0.1 at 2011-09-22 01:20:23 -0400
+  Processing by BooksController#new as HTML
+Rendered books/new.html.erb within layouts/application (76.0ms)
+Completed 200 OK in 366ms (Views: 365.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2011-09-24 14:17:48 -0400
+  Processing by BooksController#new as HTML
+Rendered books/new.html.erb within layouts/application (38.1ms)
+Completed 200 OK in 163ms (Views: 162.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2011-09-24 14:18:57 -0400
+  Processing by BooksController#new as HTML
+Rendered books/new.html.erb within layouts/application (32.3ms)
+Completed 200 OK in 145ms (Views: 145.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2011-09-27 11:30:21 -0400
+  Processing by BooksController#new as HTML
+Rendered books/new.html.erb within layouts/application (32.8ms)
+Completed 200 OK in 201ms (Views: 201.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2011-09-28 01:58:02 -0400
+  Processing by BooksController#new as HTML
+Rendered books/new.html.erb within layouts/application (30.7ms)
+Completed 200 OK in 159ms (Views: 158.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2011-09-28 01:58:32 -0400
+  Processing by BooksController#new as HTML
+Rendered books/new.html.erb within layouts/application (37.4ms)
+Completed 200 OK in 179ms (Views: 178.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2011-09-28 01:59:05 -0400
+  Processing by BooksController#new as HTML
+Rendered books/new.html.erb within layouts/application (40.5ms)
+Completed 200 OK in 191ms (Views: 190.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2011-09-28 01:59:35 -0400
+  Processing by BooksController#new as HTML
+Rendered books/new.html.erb within layouts/application (40.7ms)
+Completed 200 OK in 168ms (Views: 167.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2011-09-28 18:46:16 -0400
+  Processing by BooksController#new as HTML
+Rendered books/new.html.erb within layouts/application (43.8ms)
+Completed 200 OK in 201ms (Views: 201.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2011-09-29 15:02:57 -0400
+  Processing by BooksController#new as HTML
+Rendered books/new.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 157ms (Views: 157.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2011-10-04 23:20:37 -0400
+  Processing by BooksController#new as HTML
+Rendered books/new.html.erb within layouts/application (32.7ms)
+Completed 200 OK in 179ms (Views: 178.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2011-10-04 23:26:06 -0400
+  Processing by BooksController#new as HTML
+Rendered books/new.html.erb within layouts/application (29.3ms)
+Completed 200 OK in 147ms (Views: 146.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2011-10-05 14:31:03 -0400
+  Processing by BooksController#new as HTML
+Rendered books/new.html.erb within layouts/application (31.8ms)
+Completed 200 OK in 153ms (Views: 152.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2011-10-05 14:42:19 -0400
+  Processing by BooksController#new as HTML
+Rendered books/new.html.erb within layouts/application (29.6ms)
+Completed 200 OK in 160ms (Views: 160.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2011-10-05 14:45:21 -0400
+  Processing by BooksController#new as HTML
+Rendered books/new.html.erb within layouts/application (39.8ms)
+Completed 200 OK in 180ms (Views: 179.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2011-10-09 23:27:32 -0400
+  Processing by BooksController#new as HTML
+Rendered books/new.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 135ms (Views: 135.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2011-10-12 02:15:07 -0400
+  Processing by BooksController#new as HTML
+Rendered books/new.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 80ms (Views: 79.1ms | ActiveRecord: 0.0ms)
